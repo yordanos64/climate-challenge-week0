@@ -1,39 +1,62 @@
- Exploratory Data Analysis (EDA) Notebooks
+# 📓 Notebooks Documentation
 
-This folder contains the primary analysis conducted for each country.
-
- Files
-- `climate_data_eda.ipynb`: The main notebook where data from all five countries is merged, cleaned, and visualized.
-
-## Analysis Steps (Task 2)
-1. Data Loading:Merged separate CSVs for Ethiopia, Kenya, Nigeria, Sudan, and Tanzania.
-2. Data Cleaning:
-   - Replaced NASA sentinel values (`-999`) with `NaN`.
-   - Handled missing values and dropped duplicate rows.
-3. **Feature Engineering:
-   - Converted `YEAR` and `DOY` into a proper `Date` format.
-   - Extracted `Month` for seasonal analysis.
-4. Visualizations:
-
-   - Temperature Trends (T2M): Identified Sudan as the hottest and Ethiopia as the coolest.
-   - recipitation Patterns: Visualized rainfall peaks for each country.
-   - Correlation Heatmap: Analyzed the relationship between variables like humidity, pressure, and temperature.
+This folder contains the core analysis notebooks for the climate project.
 
 
 
+ 🔎 Task 2: Exploratory Data Analysis (EDA)
 
- $$$ Task 3: Cross-Country Analysis & Vulnerability Ranking
+File: `climate_data_eda.ipynb`
 
-This section synthesizes data from Ethiopia, Kenya, Nigeria, Sudan, and Tanzania to support Ethiopia's COP32 position.
+Description
 
- 🔍 Key Analysis Steps
-*   Data Merging:Integrated 20,540 rows of daily observations into a unified dataset.
-*   Extreme Heat Analysis: Identified Sudan as a critical hotspot with an average of 224.5 days/year** exceeding 35°C.
-*   Statistical Testing: Conducted a One-Way ANOVA , resulting in a P-value of 0.0, confirming significant climate variation across the region.
+This notebook focuses on understanding, cleaning, and preparing the dataset.
 
- 🏆 Vulnerability Ranking
-1. Sudan (Extreme Heat Stress)
-2. Nigeria/Tanzania (High Rainfall Variability)
-3.Ethiopia/Kenya (Moderate Climate Stress)
+Key Steps
+
+* Loaded climate data from five countries
+* Replaced invalid values (`-999` → NaN)
+* Removed duplicates and handled missing data
+* Converted `YEAR` and `DOY` into Date format
+* Extracted Month for seasonal analysis
+
+Visualizations
+
+* Temperature trends (T2M)
+* Precipitation patterns
+* Correlation heatmap
 
 
+
+🌍 Task 3: Cross-Country Analysis
+
+File:`cross_country_analysis.ipynb`
+
+ Description
+
+This notebook performs comparative analysis across countries and generates insights.
+
+
+
+* Merged all country datasets
+* Conducted extreme heat analysis
+* Performed One-Way ANOVA
+* Built vulnerability ranking
+
+
+
+Key Findings
+
+* Sudan shows extreme heat stress
+* Nigeria and Tanzania show rainfall variability
+* Ethiopia and Kenya show moderate climate conditions
+* Statistical testing confirms significant differences
+
+
+
+📌 Summary
+
+* Task 2 → Data understanding and preprocessing
+* Task 3 → Comparative analysis and decision-making
+
+These notebooks together provide a complete climate analysis workflow.
